@@ -10,6 +10,7 @@ public class DateAdapter extends XmlAdapter {
 
 	private String pattern = "dd/MM/yyyy";
 	
+	
 	public Date unmarshal(String arg0) throws Exception {
 		return new SimpleDateFormat(pattern).parse(arg0);
 	}
